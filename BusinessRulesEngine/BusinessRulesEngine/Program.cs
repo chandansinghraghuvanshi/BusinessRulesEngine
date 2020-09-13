@@ -14,6 +14,7 @@ namespace BusinessRulesEngine
 
             do
             {
+                Console.WriteLine("");
                 Console.WriteLine("Select your option");
                 Console.WriteLine("1:Make payment for a physical product");
                 Console.WriteLine("2:Make payment for a book");
@@ -21,6 +22,8 @@ namespace BusinessRulesEngine
                 Console.WriteLine("4:Make payment for a membership upgrade");
                 Console.WriteLine("5:Make payment for a video");
                 Console.WriteLine("0:Exit");
+                Console.WriteLine("");
+                payment = null;
                 optionSelected = Console.ReadLine();
 
                 switch (optionSelected)
@@ -63,12 +66,16 @@ namespace BusinessRulesEngine
                         }
                     default:
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Invalid option, try again");
                             break;
                         }
                 }
 
-                payment.ExecuteBusinessRules();
+                if(payment != null)
+                {
+                    payment.ExecuteBusinessRules();
+                }
+                
             } while (optionSelected != "0");
         }
     }
