@@ -58,6 +58,7 @@ namespace BusinessRulesEngine
                     case "5":
                         {
                             Console.WriteLine(optionSelected);
+                            payment = new Video();
                             break;
                         }
                     default:
