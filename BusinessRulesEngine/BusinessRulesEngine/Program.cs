@@ -46,11 +46,13 @@ namespace BusinessRulesEngine
                     case "3":
                         {
                             Console.WriteLine(optionSelected);
+                            payment = new Membership(new NewMember());
                             break;
                         }
                     case "4":
                         {
                             Console.WriteLine(optionSelected);
+                            payment = new Membership(new UpgradeMember());
                             break;
                         }
                     case "5":
