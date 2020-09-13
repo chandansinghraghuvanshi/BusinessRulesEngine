@@ -16,7 +16,7 @@ namespace BusinessRulesEngine.Models
 
         public void ExecuteBusinessRules()
         {
-            Console.WriteLine("Duplicate packing slip for royality department created");
+            Console.WriteLine("Duplicate packing slip created for royality department created");
             GenerateCommissionPayment();
         }
 

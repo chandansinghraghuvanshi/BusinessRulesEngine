@@ -33,31 +33,31 @@ namespace BusinessRulesEngine
 
                     case "1":
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Payment made for a physical product");
                             payment = new PhysicalProduct(new GenerateCommission());
                             break;
                         }
                     case "2":
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Payment made for a book");
                             payment = new Book(new GenerateCommission());
                             break;
                         }
                     case "3":
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Payment made for a new membership");
                             payment = new Membership(new NewMember());
                             break;
                         }
                     case "4":
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Payment made for a membership upgrade");
                             payment = new Membership(new UpgradeMember());
                             break;
                         }
                     case "5":
                         {
-                            Console.WriteLine(optionSelected);
+                            Console.WriteLine("Payment made for a video");
                             payment = new Video();
                             break;
                         }

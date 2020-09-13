@@ -16,7 +16,7 @@ namespace BusinessRulesEngine.Models
 
         public void ExecuteBusinessRules()
         {
-            Console.WriteLine("Packing slip for shipping generated");
+            Console.WriteLine("Packing slip for shipping generated for physical product");
             GenerateCommissionPayment();
         }
 
